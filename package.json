@@ -1,14 +1,20 @@
 {
   "scripts": {
     "server": "ts-node server.ts",
-    "client": "ts-node client.ts"
+    "client:node": "ts-node node-client.ts",
+    "client:browser": "open http://localhost:2222/index.html"
   },
   "devDependencies": {
+    "@types/body-parser": "1.17.0",
+    "@types/express": "4.16.1",
     "@types/node": "10.12.21",
     "ts-node": "7.0.1",
     "typescript": "3.2.2"
   },
   "dependencies": {
+    "body-parser": "1.18.3",
+    "browser-soap": "github:johniak/browser-soap",
+    "express": "4.16.4",
     "soap": "0.25.0"
   }
 }
