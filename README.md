@@ -11,13 +11,23 @@ TypeScript Soap Server and Client Demo
 2. wsdl中还包含了端口号，也要一致
 
 
+## 启动server
+
 ```
 npm install
 npm run server
-npm run client:node
-npm run client:browser
 ```
 
-## soap client无法用于browser
+## node下的soap client，使用了`soap`库
 
-因为使用了很多node中的模块。
+```
+npm run client:node
+```
+
+注意，`soap`库中的client不能在browser中使用，因为内部使用了很多node中的模块。
+
+## browser中的soap client, 使用了`browser-soap`库
+
+```
+npm run client:browser
+```
